@@ -8,7 +8,7 @@
 <ul>
   <li>
     <h4> Sample Image:</h4>
-    <img src="https://github.com/RezaFirouzii/multi-choice_correction_opencv/blob/main/sample%201/sample1.jpg">
+    <img src="https://github.com/RezaFirouzii/multi-choice_correction_opencv/blob/main/sample%201/sample1_2.jpg">
   </li>
   <li>
     <h4> After scan & corrrection:</h4>

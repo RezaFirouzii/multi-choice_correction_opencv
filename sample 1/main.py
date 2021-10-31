@@ -50,7 +50,7 @@ def is_valid_test(tests):
 
 if __name__ == "__main__":
 
-    img = cv.imread('sample1.jpg')
+    img = cv.imread('sample1_2.jpg')
     cop = img.copy()
     img = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
     

@@ -104,14 +104,13 @@ if __name__ == "__main__":
     for i in range(len(answers)):
         print(i + 1, ":", answers[i])
 
-        '''
     data = {
         "Q": [i for i in range(1, len(answers) + 1)],
         "A": answers
     }
 
     data = pd.DataFrame(data)
-    data.to_excel('./sample1.xlsx', 'Answer Sheet 1')'''
+    data.to_excel('./sample1.xlsx', 'Answer Sheet 1')
 
     cv.imwrite('output.jpg', cop)
     cv.imshow('Detected Choices', cop)

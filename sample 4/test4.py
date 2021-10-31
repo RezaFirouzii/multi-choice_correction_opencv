@@ -30,7 +30,7 @@ def sort_contours_horizontally(contours):
         dic[min(x_points)[0]] = contour
     
     dic = dict(sorted(dic.items()))
-    return list(reversed(dic.values()))
+    return list(reversed(list(dic.values())))
 
 
 if __name__ == "__main__":
@@ -61,7 +61,6 @@ if __name__ == "__main__":
         kernel = cv.getStructuringElement(cv.MORPH_RECT, (19, 1))
         section = cv.dilate(section, kernel)
 
-        
         cnts, hierarchy = cv.findContours(section, cv.RETR_CCOMP, cv.CHAIN_APPROX_SIMPLE)
         cnts = list(filter(lambda x: 250 < cv.contourArea(x) < 650, cnts))
         cnts = sort_contours_vertically(cnts)
@@ -78,7 +77,7 @@ if __name__ == "__main__":
 
         
     answers = []
-    for group in test_groups:
+    for i, group in enumerate(test_groups):
         filled_percentages = []
 
         for choice in group:
